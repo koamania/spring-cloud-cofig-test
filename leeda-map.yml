@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: dhlee
+    password: 11qqww22!!
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    store-type: REDIS
+  cache:
+    type: redis
+
+map-search:
+  kakao:
+    host: dapi.kakao.com
+    api:
+      key: 5bed545f676e30b9f98788c64d92bf8b
+      local:
+        search: "/v2/local/search/keyword.json"
