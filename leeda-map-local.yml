@@ -12,3 +12,7 @@ logging:
     org:
       hibernate:
         type: trace
+        
+leeda:
+  user:
+    name: 이다현
